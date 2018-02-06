@@ -14,13 +14,13 @@ gem "paperclip", "~> 4.2"
 
 
 group :development, :test do
-  gem 'debugger'
+  gem 'debugger2', :git => "git://github.com/ko1/debugger2.git"
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
 end
 
-group :production do 
+group :production do
 	gem 'pg'
 	gem 'rails_12factor', '0.0.2'
 end
